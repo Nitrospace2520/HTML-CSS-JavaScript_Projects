@@ -32,6 +32,7 @@ header {
   box-shadow: 2px 2px 5px #123456;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 main {
   flex: 1 0 0;
@@ -59,6 +60,8 @@ div > section {
   border-radius: min(15px, 5vh);
   text-align: center;
   background-color: var(--hover-color);
+  box-shadow: 7px 7px #123456;
+  overflow: unset;
 }
 
 body a:any-link {

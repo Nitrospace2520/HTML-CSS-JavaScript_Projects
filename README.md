@@ -22,3 +22,7 @@ check your BMI by providing your height and weight and check your health
 ## Fifth Project : `Local Time`
 
 see your local time
+
+## Sixth Project : `Guess The Number`
+
+Here you have 10 guesses in which you have to guess the right number from 1 to 100.

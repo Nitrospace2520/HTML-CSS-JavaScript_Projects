@@ -30,6 +30,7 @@ header {
   box-shadow: 2px 2px 5px #123456;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 .container {
   background-color: white;
