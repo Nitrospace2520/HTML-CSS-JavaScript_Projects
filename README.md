@@ -5,3 +5,15 @@ Hello everyone in this code ripository, I am going to share my projects related 
 ## First Project : `Age Calculator`
 
 It will calculate someone's present age.
+
+## Second Project : `Pick Background Color`
+
+pick or create your favorite background color.
+
+## Third Project : `Count Down`
+
+start your time for doing your valuable work
+
+## Fourth Project : `BMI Calculator`
+
+check your BMI by providing your height and weight and check your health

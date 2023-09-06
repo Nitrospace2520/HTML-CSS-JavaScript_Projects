@@ -32,6 +32,10 @@ header {
   position: sticky;
   top: 0px;
 }
+a {
+  display: block;
+  width: 100%;
+}
 a:link,
 a:visited {
   text-decoration: none;
@@ -79,7 +83,7 @@ main h1 {
   background-color: #f00;
 }
 #green {
-  background-color: #0f0;
+  background-color: #080;
 }
 #blue {
   background-color: #00f;

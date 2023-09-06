@@ -15,6 +15,7 @@ html {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   scroll-behavior: smooth;
+  font-size: 1.2rem;
 }
 body {
   position: relative;
@@ -35,10 +36,37 @@ header {
 main {
   flex: 1 0 0;
   padding: 2rem;
+  position: relative;
+  top: 50px;
 }
 main h1 {
   text-align: center;
   padding: 1rem;
+}
+div.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: min(2rem, 5vw);
+}
+div > section {
+  flex: 1 1 0px;
+  padding: 2rem;
+  height: min(120px, 20vh);
+  width: min(120px, 20vh);
+  border: 1px solid var(--dark-color);
+  border-radius: min(15px, 5vh);
+  text-align: center;
+  background-color: var(--hover-color);
+}
+
+body a:any-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 0.5s;
 }
 a:link,
 a:visited {
@@ -47,22 +75,6 @@ a:visited {
 }
 a:hover,
 a:focus {
-  color: var(--hover-color);
+  color: #123479;
   font-size: 1.2em;
-}
-div.projects {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: min(1rem, 5vw);
-}
-div > section {
-  flex: 1 1 0px;
-  padding: 2rem;
-  height: min(90px, 25vh);
-  width: min(100px, 20vw);
-  border: 1px solid var(--border-color);
-  text-align: center;
-  background-color: #ffff00;
 }
