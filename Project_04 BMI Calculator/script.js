@@ -24,9 +24,19 @@ const calculateBMI = (height, weight) => {
 document.querySelector("#generate").addEventListener("click", (event) => {
   const height = document.querySelector("#height").value;
   const weight = document.querySelector("#weight").value;
-  const resBMI = calculateBMI(height, weight);
-  document.querySelector("#bmi-res").innerHTML = `${resBMI}`;
-  document.querySelector("#bmi-res").style.padding = "1.2rem";
+  if (isNaN(height) || height < 0 || height === "") {
+    document.querySelector(
+      "#bmi-res"
+    ).innerHTML = `Please provide a valid <b>Height</b>`;
+  } else if (isNaN(weight) || weight < 0 || weight === "") {
+    document.querySelector(
+      "#bmi-res"
+    ).innerHTML = `Please provide a valid <b>Weight</b>`;
+  } else {
+    const resBMI = calculateBMI(height, weight);
+    document.querySelector("#bmi-res").innerHTML = `${resBMI}`;
+    document.querySelector("#bmi-res").style.padding = "1.2rem";
+  }
 });
 document.querySelector("#reset").addEventListener("click", (event) => {
   location.reload();

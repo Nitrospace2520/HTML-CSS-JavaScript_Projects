@@ -35,6 +35,7 @@ header {
 a {
   display: block;
   width: 100%;
+  text-align: center;
 }
 a:link,
 a:visited {
@@ -43,8 +44,9 @@ a:visited {
 }
 a:hover,
 a:focus {
-  color: var(--hover-color);
+  color: #123496;
   font-size: 1.2em;
+  transition: all 0.3s;
 }
 main {
   flex: 1 0 0;
