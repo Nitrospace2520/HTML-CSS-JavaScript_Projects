@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1rem, 10vh, 1.5rem);
 }
 :root {
   --bg-color: #000;
@@ -17,9 +17,11 @@ html {
   --text-shadow-color: #00f;
 }
 input,
-label,
 button {
   font-size: inherit;
+  background-color: #454545;
+  border-radius: 10px;
+  color: #f5f5f5;
 }
 body {
   min-height: 100vh;
@@ -32,14 +34,20 @@ header {
   position: sticky;
   top: 0px;
   text-align: center;
-  text-shadow: 3px 3px var(--text-shadow-color);
+  /* text-shadow: 3px 3px var(--text-shadow-color); */
   text-transform: uppercase;
-  text-decoration: 5px underline;
-  border: 2px solid var(--light-color);
+  /* text-decoration: 5px underline; */
+  /* border: 2px solid var(--light-color); */
   z-index: 2;
   background-color: var(--bg-color);
   padding-bottom: 0.5rem;
   box-shadow: 0px 0px 15px 9px var(--medium-color);
+}
+header a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: var(--text-shadow-color);
 }
 main {
   min-height: 90vh;
@@ -54,12 +62,18 @@ section {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  border: 2px solid var(--light-color);
+  /* border: 2px solid var(--light-color); */
   padding: 2rem;
   background-color: var(--bg-color);
   border-radius: 25px;
   box-shadow: 0px 0px 15px 9px var(--medium-color);
   /* flex: 1 1 120px; */
+}
+section:hover {
+  border: 2px solid var(--light-color);
+}
+section h1 {
+  text-decoration: underline double #1e90ff 3px;
 }
 button {
   padding: 0.3rem;
@@ -78,4 +92,7 @@ button {
 } */
 .output {
   display: none;
+}
+.pause-btn {
+  margin-right: 1rem;
 }
