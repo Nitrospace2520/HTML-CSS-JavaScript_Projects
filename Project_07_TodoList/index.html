@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html">Home</a>
+      </h1>
+    </header>
+    <main>
+      <h1>TODO List</h1>
+      <section class="input-lists" id="input">
+        <label for="tasks">Enter Task:</label>
+        <input type="text" id="tasks" name="tasks-items" required />
+        <button id="add-task">Add</button>
+      </section>
+      <section class="display-tasks" id="display-tasks">
+        <table>
+          <thead id="task-head">
+            <tr id="task-row-title">
+              <th class="task-head-data">Task NO.</th>
+              <th class="task-head-data">Name of Tasks</th>
+              <th class="task-head-data">Process</th>
+            </tr>
+          </thead>
+          <tbody id="task-body">
+            <tr id="task-1">
+              <td class="task-no">1</td>
+              <td class="task-activity">Eat</td>
+              <td class="task-news">
+                <button class="done-button">Done</button>
+                <button class="remove-button">Remove</button>
+              </td>
+            </tr>
+            <tr id="task-2">
+              <td class="task-no">2</td>
+              <td class="task-activity">Code</td>
+              <td class="task-news">
+                <button class="done-button">Done</button>
+                <button class="remove-button">Remove</button>
+              </td>
+            </tr>
+            <tr id="task-3">
+              <td class="task-no">3</td>
+              <td class="task-activity">Sleep</td>
+              <td class="task-news">
+                <button class="done-button">Done</button>
+                <button class="remove-button">Remove</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

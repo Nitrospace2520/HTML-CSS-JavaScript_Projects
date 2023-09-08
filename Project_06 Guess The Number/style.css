@@ -85,3 +85,6 @@ section > button {
 section > h2 {
   text-align: center;
 }
+main:hover {
+  border: 5px double #123479;
+}

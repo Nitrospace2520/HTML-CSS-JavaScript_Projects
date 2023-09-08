@@ -26,3 +26,7 @@ see your local time
 ## Sixth Project : `Guess The Number`
 
 Here you have 10 guesses in which you have to guess the right number from 1 to 100.
+
+## Seventh Project : `Todo List`
+
+Here one can add their routine tasks for a better work-ethic
