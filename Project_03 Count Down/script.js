@@ -43,13 +43,18 @@ const displayToUsers = (obj) => {
   if (!nIntervId) {
     nIntervId = setInterval(() => {
       obj.leftSecs -= 1;
-      if (obj.leftSecs === 0 && obj.leftMins >= 1) {
+      if (obj.leftSecs <= 0 && obj.leftMins >= 1) {
         obj.leftSecs += 60;
         obj.leftMins -= 1;
-      } else if (obj.leftMins === 0 && obj.leftHrs >= 1) {
+      } else if (obj.leftSecs <= 0 && obj.leftMins === 0 && obj.leftHrs >= 1) {
         obj.leftMins += 60;
         obj.leftHrs -= 1;
-      } else if (obj.leftHrs === 0 && obj.leftDays >= 1) {
+      } else if (
+        obj.leftSecs <= 0 &&
+        obj.leftMins === 0 &&
+        obj.leftHrs === 0 &&
+        obj.leftDays >= 1
+      ) {
         obj.leftHrs += 24;
         obj.leftDays -= 1;
       }

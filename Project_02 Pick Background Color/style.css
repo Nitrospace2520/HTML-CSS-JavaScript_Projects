@@ -23,6 +23,10 @@ body {
   justify-content: center;
   flex-flow: column wrap;
   background-color: var(--light-color);
+  background-image: url(background.bmp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 header {
   width: 100%;

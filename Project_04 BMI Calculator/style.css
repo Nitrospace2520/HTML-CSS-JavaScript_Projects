@@ -34,22 +34,32 @@ a:visited {
 a:hover,
 a:focus {
   color: var(--dark-blue);
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
 }
 body {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
   position: relative;
-  /* min-height: 100vh; */
   background-color: #faebd7;
+  background-image: url(background.bmp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  backdrop-filter: blur(3px);
 }
 main {
   flex: 1 0 0;
   position: relative;
   box-shadow: 0 0 10px #808080;
-  margin: clamp(9rem, 25vh, 15rem);
+  margin: clamp(9rem, 25vh, 15rem) auto;
+  background-color: rgba(4, 249, 249, 0.725);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
   padding: 3rem;
   border-radius: 2rem;
 }

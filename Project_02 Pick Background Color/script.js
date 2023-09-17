@@ -1,4 +1,5 @@
 const setBackGroundColor = (colour) => {
+  document.body.style.backgroundImage = "none";
   document.body.style.backgroundColor = colour;
   if (colour !== "yellow")
     document.querySelector("main h1").style.color = "#f5f5f5";

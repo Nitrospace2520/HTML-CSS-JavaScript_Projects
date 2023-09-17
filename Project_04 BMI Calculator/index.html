@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script type="module" src="script.js"></script>
   </head>
   <body>
     <header>
       <h1>
-        <a href="../index.html">Home</a>
+        <a href="../index.html"><i class="fa fa-home"></i> Home</a>
       </h1>
     </header>
     <main>
@@ -19,12 +23,12 @@
         <label for="height"
           >Height &LeftAngleBracket;in cm&RightAngleBracket; &Colon;</label
         >
-        <input type="number" name="height" id="height" />
+        <input type="number" name="height" id="height" placeholder="175" />
         <br />
         <label for="weight"
           >Weight &LeftAngleBracket;in kg&RightAngleBracket; &Colon;</label
         >
-        <input type="number" name="weight" id="weight" /><br />
+        <input type="number" name="weight" id="weight" placeholder="64" /><br />
         <button id="generate">Generate</button>
         <button id="reset">Reset</button>
         <p id="bmi-res"></p>

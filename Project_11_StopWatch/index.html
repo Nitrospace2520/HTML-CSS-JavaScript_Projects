@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html"> <i class="fa fa-home"></i> Home</a>
+      </h1>
+      <section class="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+      </section>
+    </header>
+    <main>
+      <table class="display-watch">
+        <thead>
+          <tr>
+            <th id="hr">Hours</th>
+            <th id="min">Minutes</th>
+            <th id="sec">Seconds</th>
+            <!-- <th id="milli">Milliseconds</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="set-hr">0</td>
+            <td id="set-min">0</td>
+            <td id="set-sec">0</td>
+            <!-- <td id="set-milli">0</td> -->
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+  <script type="module" src="script.js"></script>
+</html>

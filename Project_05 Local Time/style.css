@@ -11,6 +11,11 @@ body {
   justify-content: center;
   flex-flow: column wrap;
   background-color: #faebd7;
+  background-image: url(background.bmp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px);
 }
 header {
   width: 100%;

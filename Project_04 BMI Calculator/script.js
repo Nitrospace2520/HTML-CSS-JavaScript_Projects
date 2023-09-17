@@ -39,5 +39,7 @@ document.querySelector("#generate").addEventListener("click", (event) => {
   }
 });
 document.querySelector("#reset").addEventListener("click", (event) => {
+  document.querySelector("#height").value = " ";
+  document.querySelector("#weight").value = "";
   location.reload();
 });
