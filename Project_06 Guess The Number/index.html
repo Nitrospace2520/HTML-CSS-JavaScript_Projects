@@ -11,38 +11,40 @@
     />
   </head>
   <body>
-    <header>
+    <header class="nav-bar">
       <h1>
         <a href="../index.html"><i class="fa fa-home"></i> Home</a>
       </h1>
     </header>
     <main>
-      <section class="heading">
-        <h1>Guess The Right Number</h1>
-        <p>Try and guess the right randomly generated number from 1 to 100</p>
-        <p>You have 10 choices to guess the right number</p>
-      </section>
-      <section class="input">
-        <label for="guessed-number">Enter Number :</label>
-        <input type="text" class="input-number" id="guessed-number" />
-        <br />
-        <button id="submit-guess">Submit Guess</button>
-        <h2 id="hint"></h2>
-      </section>
-      <section class="display">
-        <p>
-          You have only
-          <span id="remaining-guess-count"
-            ><b><u>10</u></b></span
-          >
-          guesses left.
-        </p>
-        <p>
-          Your previous Guess Number was &colon;<span id="display-previous"
-            ><b></b
-          ></span>
-        </p>
-      </section>
+      <div>
+        <section class="heading">
+          <h1>Guess The Right Number</h1>
+          <p>Try and guess the right randomly generated number from 1 to 100</p>
+          <p>You have 10 choices to guess the right number</p>
+        </section>
+        <section class="input">
+          <label for="guessed-number">Enter Number :</label>
+          <input type="text" class="input-number" id="guessed-number" />
+          <br />
+          <button id="submit-guess">Submit Guess</button>
+          <h2 id="hint"></h2>
+        </section>
+        <section class="display">
+          <p>
+            You have only
+            <span id="remaining-guess-count"
+              ><b><u>10</u></b></span
+            >
+            guesses left.
+          </p>
+          <p>
+            Your previous Guess Number was &colon;<span id="display-previous"
+              ><b></b
+            ></span>
+          </p>
+        </section>
+      </div>
     </main>
     <script type="module" src="script.js"></script>
   </body>

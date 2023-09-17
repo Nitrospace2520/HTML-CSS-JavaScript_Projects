@@ -35,7 +35,7 @@ document.getElementById("submit-guess").addEventListener("click", (event) => {
     if (giveHint(guessVal) === "Congratulation! Correct Number") {
       document.querySelector("#submit-guess").setAttribute("disabled", "true");
       displayRes.innerHTML = `Let's play for the next round and best of luck`;
-      let time = 7;
+      let time = 15;
       setInterval(() => {
         displayRes.innerHTML = `Congratulation! Correct Number<br\>New game will start within ${time} seconds`;
         time--;
