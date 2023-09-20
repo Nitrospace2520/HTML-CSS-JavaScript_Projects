@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html"> <i class="fa fa-home"></i> Home</a>
+      </h1>
+    </header>
+    <main class="container">
+      <h1>Random Password Generator</h1>
+      <div class="password-area">
+        <section id="password">
+          <input type="text" id="generated-password" placeholder="password" />
+          <button id="btn-copy">copy</button>
+        </section>
+        <section id="depentdencies">
+          <div>
+            <input
+              type="range"
+              name="length"
+              id="length"
+              value="8"
+              max="50"
+              min="6"
+            />
+            <label for="length"
+              >Length (<span id="display-length">8</span>)</label
+            >
+          </div>
+          <div>
+            <input type="checkbox" name="include-number" id="include-number" />
+            <label for="include-number">Include Numbers</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="include-special-chars"
+              id="include-special-chars"
+            />
+            <label for="include-special-chars"
+              >Include Special Characters</label
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

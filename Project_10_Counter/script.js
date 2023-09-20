@@ -7,9 +7,9 @@ const changeCounterValue = () => {
   const counterValue = document.getElementById("counter-value");
   if (counter === 0) counterValue.style.color = "#000";
   if (counter <= -1) {
-    counterValue.style.color = "#f00";
+    counterValue.style.color = "#700";
   } else if (counter >= 1) {
-    counterValue.style.color = "#090";
+    counterValue.style.color = "#070";
   }
   counterValue.innerHTML = counter;
   console.log(counter);

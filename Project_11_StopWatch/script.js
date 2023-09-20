@@ -24,9 +24,7 @@ const updateWatch = () => {
 };
 
 start.addEventListener("click", (event) => {
-  interval = setInterval(() => {
-    updateWatch();
-  }, 1000);
+  interval = setInterval(updateWatch, 1000);
 });
 
 stop.addEventListener("click", (event) => {
